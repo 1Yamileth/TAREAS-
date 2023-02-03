@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.RESULTADO_PoI_textBox = new System.Windows.Forms.TextBox();
             this.Numero_errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Limpiar_button = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Numero_errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,12 +128,37 @@
             // 
             this.Numero_errorProvider.ContainerControl = this;
             // 
+            // Limpiar_button
+            // 
+            this.Limpiar_button.Font = new System.Drawing.Font("Georgia", 11F);
+            this.Limpiar_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Limpiar_button.Location = new System.Drawing.Point(552, 331);
+            this.Limpiar_button.Name = "Limpiar_button";
+            this.Limpiar_button.Size = new System.Drawing.Size(210, 23);
+            this.Limpiar_button.TabIndex = 10;
+            this.Limpiar_button.Text = "LIMPIAR PANTALLA";
+            this.Limpiar_button.UseVisualStyleBackColor = true;
+            this.Limpiar_button.Click += new System.EventHandler(this.Limpiar_button_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Underline);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label5.Location = new System.Drawing.Point(31, 336);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(477, 18);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "SI DESEA INGRESAR NUEVOS NUMEROS PRESIONE EL BOTON";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Limpiar_button);
             this.Controls.Add(this.RESULTADO_PoI_textBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ResultadoPoN_textBox);
@@ -159,6 +186,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox RESULTADO_PoI_textBox;
         private System.Windows.Forms.ErrorProvider Numero_errorProvider;
+        private System.Windows.Forms.Button Limpiar_button;
+        private System.Windows.Forms.Label label5;
     }
 }
 

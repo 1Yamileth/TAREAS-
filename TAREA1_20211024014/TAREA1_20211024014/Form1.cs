@@ -68,5 +68,12 @@ namespace TAREA1_20211024014
             return num2;
 
         }
+
+        private void Limpiar_button_Click(object sender, EventArgs e)
+        {
+            ResultadoPoN_textBox.Clear();
+            RESULTADO_PoI_textBox.Clear();
+            NUmero_textBox.Clear();
+        }
     }
 }
